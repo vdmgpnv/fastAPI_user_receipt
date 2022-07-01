@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-SQLALCHEMY_DATABASE_URL = "postgresql://vadim:Vadimka_Gapon_123321105qQ@89.208.209.192/PostgreSQL-3718"
+SQLALCHEMY_DATABASE_URL = "postgresql://vadim:Vadimka_Gapon_123321105qQ@89.208.209.192/PostgreSQL-3718" #такие вещи лучше хранить в переменных среды
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
